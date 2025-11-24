@@ -5,6 +5,21 @@
     font-family: sans-serif;
 }
 
+.myprofileimage{
+    height: 20rem;
+    width: 22rem;
+    margin: 2rem;
+    border-radius: 100%;
+    border: 3px solid darkgrey;
+}
+
+.myprofileimage:hover{
+    height: 21rem;
+    width: 23rem;
+    transition: 1s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 .Werkervaring{
     width: 100%;
     padding: 1rem;
