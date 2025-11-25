@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    /*stylesheet voor laptop*/
+    <link
+            rel="stylesheet"
+            media="srceen and (min-width: 992px)"
+            href="css/style.css"
+    />
+    /*stylesheet voor mobile*/
+    <link
+            rel="stylesheet"
+            media="screen and (max-width: 576px)"
+            href="css/style-mobile.css"
+    />
+    /*stylesheet voor tablet*/
+    <link
+            rel="stylesheet"
+            media="screen and (min-width: 576px) and (max-width: 992px)"
+            href="css/style-tablet.css"
+    />
+
     <title>CV-Jelle-Schrijvers</title>
 </head>
 <body>
@@ -23,11 +41,13 @@
             </p>
         </article>
         <article class="opleiding">
-            <h2>Opleiding</h2>
-            <h3>PXL-Digital</h3>
-            <h4>Graduaat programeren</h4>
-            <h5>september 2025 - juni 2027</h5>
-            <p>Vaardigheden: C#, HTML, CSS, JavaScript, SQL, Git, Github</p>
+            <article class="PXL">
+                <h2>Opleiding</h2>
+                <h3>PXL-Digital</h3>
+                <h4>Graduaat programeren</h4>
+                <h5>september 2025 - juni 2027</h5>
+                <p>Vaardigheden: C#, HTML, CSS, JavaScript, SQL, Git, Github</p>
+            </article>
         </article>
         <article class="contact-info">
             <h2>Contact</h2>
@@ -107,6 +127,18 @@
                  tegen volwassen tegenstanders, zodat ik mijn beste prestaties<br>
                  kan behalen voor mijn team.
              </p>
+         </article>
+     </section>
+     <section class = "Talenkennis">
+         <h2>Talen</h2>
+         <article class = "Nederlands">
+
+         </article>
+         <article class = "Engels">
+
+         </article>
+         <article class = "Frans">
+
          </article>
      </section>
  </main>
