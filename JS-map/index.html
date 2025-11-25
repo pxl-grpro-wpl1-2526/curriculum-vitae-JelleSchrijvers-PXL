@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    /*stylesheet voor laptop*/
+    <!-- stylesheet voor laptop --> 
     <link
             rel="stylesheet"
-            media="srceen and (min-width: 992px)"
+            media="screen and (min-width: 992px)"
             href="css/style.css"
     />
-    /*stylesheet voor mobile*/
+    <!--stylesheet voor mobiel-->
     <link
             rel="stylesheet"
             media="screen and (max-width: 576px)"
             href="css/style-mobile.css"
     />
-    /*stylesheet voor tablet*/
+    <!--stylesheet voor tablet-->
     <link
             rel="stylesheet"
             media="screen and (min-width: 576px) and (max-width: 992px)"
@@ -24,7 +24,7 @@
 
     <title>CV-Jelle-Schrijvers</title>
 </head>
-<body>
+<body id ="top">
 <header>
     <section class = "zijkant-over-mij">
         <article class="basis-info">
@@ -40,15 +40,15 @@
                 Ik ben gemotiveerd om mijn vaardigheden verder te ontwikkelen binnen een professionele omgeving.
             </p>
         </article>
-        <article class="opleiding">
+        <section class="opleiding">
             <article class="PXL">
                 <h2>Opleiding</h2>
                 <h3>PXL-Digital</h3>
-                <h4>Graduaat programeren</h4>
+                <h4>Graduaat programmeren</h4>
                 <h5>september 2025 - juni 2027</h5>
                 <p>Vaardigheden: C#, HTML, CSS, JavaScript, SQL, Git, Github</p>
             </article>
-        </article>
+        </section>
         <article class="contact-info">
             <h2>Contact</h2>
             <p>+32 474 02 82 73</p>
@@ -79,10 +79,8 @@
                 <span class ="periode">Juli 2023 - nu</span>
             </section>
             <p>
-                Ervaren in het onderhoud van onderhoud van tuinen of<br>
-                opmaken van tuinen, waaronder het scheren van hagen,<br>
-                bomen planten, kunstgras plaatsen, kiezels leggen en het<br>
-                uitvoeren van diverse groenwerkzaamheden zoals snoeien en maaien.
+                Ervaren in het onderhoud en aanleggen van tuinen, waaronder het scheren van hagen,<br>
+                bomen planten, kunstgras plaatsen, kiezels leggen en diverse andere groenwerkzaamheden.
             </p>
         </article>
         <article class = "Pasta Pronto">
@@ -145,7 +143,7 @@
 <footer>
     <p class="naamenklas">Jelle Schrijvers 1PROE</p>
     <p class="opdracht">Opdracht curriculum vitae</p>
-    <p class="terugnaarboven">Terug naar boven</p>
+    <a href="#top" class="terugnaarboven">Terug naar boven</a>
 </footer>
 </body>
 </html>
