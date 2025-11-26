@@ -1,0 +1,86 @@
+*{
+    font-family: sans-serif;
+}
+
+/*style voor image*/
+.myprofileimage{
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    border-radius: 100%;
+    border: 3px solid darkgrey;
+}
+
+/*style voor over-mij*/
+
+/*style voor opleidingen*/
+
+/*stylevoor contact-info*/
+
+/*style voor werkervaring*/
+/*.Werkervaring h2{
+
+}*/
+.Werkervaring article{
+    position: relative;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.Werkervaring{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.periode{
+    position: absolute;
+    right: 1rem;
+}
+
+/*style voor hobbys*/
+/*.hobbys h2{
+
+}*/
+.hobbys article{
+    position: relative;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.hobbys{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*style voor Talenkennis*/
+/*.Talenkennis h2{
+
+}*/
+
+/*style voor footer*/
+footer{
+    background-color: darkgrey;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.terugnaarboven{
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.5rem;
+}
