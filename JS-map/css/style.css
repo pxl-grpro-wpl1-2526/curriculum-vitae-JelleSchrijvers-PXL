@@ -1,49 +1,102 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: sans-serif;
 }
 
+/*style voor image*/
 .myprofileimage{
     height: 20rem;
-    width: 22rem;
+    width: 20rem;
     margin: 2rem;
     border-radius: 100%;
     border: 3px solid darkgrey;
 }
-
 .myprofileimage:hover{
-    height: 21rem;
-    width: 23rem;
+    height: 20rem;
+    width: 20rem;
     transition: 1s;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.Werkervaring{
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
+/*style voor over-mij*/
 
-.Hobby\'s {
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
+/*style voor opleidingen*/
 
-.periode{
-    position: relative;
-    left: 3rem;
-}
+/*stylevoor contact-info*/
 
-article{
+/*style voor werkervaring*/
+/*.Werkervaring h2{
+
+}*/
+.Werkervaring article{
     position: relative;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 30rem;
+    box-sizing: border-box;
+}
+.Werkervaring{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.periode{
+    position: absolute;
+    right: 1rem;
+}
+
+/*style voor hobbys*/
+/*.hobbys h2{
+
+}*/
+.hobbys article{
+    position: relative;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 20rem;
+    box-sizing: border-box;
+}
+.hobbys{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*style voor Talenkennis*/
+/*.Talenkennis h2{
+
+}*/
+
+/*style voor footer*/
+footer{
+    background-color: darkgrey;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.terugnaarboven{
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.1rem;
+}
+.naamenklas{
+    position : absolute;
+    bottom : 0rem;
+    left : 0.1rem;
+}
+.opdracht{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
 }
