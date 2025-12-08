@@ -22,12 +22,18 @@
             media="screen and (min-width: 576px) and (max-width: 992px)"
             href="css/style-tablet.css"
     />
-
     <title>CV-Jelle-Schrijvers</title>
 </head>
 <body id ="top">
 <header>
     <div class="menu-container">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#werkervaring">Werkervaring</a></li>
+                <li><a href="#hobbys">Hobby's</a></li>
+                <li><a href="#talenkennis">Talen</a></li>
+            </ul>
+        </nav>
         <article class="basis-info">
             <a href="https://www.linkedin.com/in/jelleschrijvers/" target="_blank"><img class="myprofileimage" src="images/profiel.jpg" alt="Jelle Schrijvers"></a>
             <h1>Jelle Schrijvers</h1>
@@ -50,21 +56,28 @@
                 <p>Vaardigheden: C#, HTML, CSS, JavaScript, SQL, Git, Github</p>
             </article>
         </section>
-        <article class="contact-info">
+        <section class="contact-info">
             <h2>Contact</h2>
-            <img class="contact-icon" src="iconen/telephone_684812.png" alt="Telefoon icoon">
-            <p>+32 474 02 82 73</p>
-            <img class="contact-icon" src="iconen/gmail_299393.png" alt="E-mail icoon">
-            <p>Jelleschrijvers07@gmail.com</p>
-            <img class="contact-icon" src="iconen/placeholder_738521.png" alt="Locatie icoon">
-            <p>Oude Barrier 66, Beringen 3583</p>
-        </article>
+            <div class="contact-container">
+                <p data-contact="+32 474 02 82 73"><img class="contact-icon" src="iconen/telephone_684812.png" alt="Telefoon icoon"></p>
+                <p data-contact="jelleschrijvers07@gmail.com"><img class="contact-icon" src="iconen/gmail_299393.png" alt="E-mail icoon"></p>
+                <p data-contact="Oude Barrier 66, Beringen 3583"><img class="contact-icon" src="iconen/placeholder_738521.png" alt="Locatie icoon"></p>
+            </div>
+        </section>
+        <section class="socials">
+            <h2>Socials</h2>
+            <div class="socials-container">
+                <a data-social="GitHub" style="--accent-color: #333" href="https://github.com/JelleSchrijvers-PXL" target="_blank"><img class="social-icon" src="iconen/github.svg" alt="GitHub icoon"></a>
+                <a data-social="Instagram" style="--accent-color: #E1306C" href="https://www.instagram.com/jelle_schrijvers/" target="_blank"><img class="social-icon" src="iconen/instagram.svg" alt="instagram icoon"></a>
+                <a data-social="X" style="--accent-color: #000" href="https://x.com/JSchrijver91615" target="_blank"><img class="social-icon" src="iconen/x.svg" alt="X icoon"></a>   
+            </div>
+        </section>
     </div>
 </header>
 <main> 
     <div class="body-container">
         <h2>Werkervaring</h2>
-        <div class = "Werkervaring">
+        <div id="Werkervaring" class = "Werkervaring">
             <article class = "Geerts Waterwerken">
                 <h3>Uitvoerder groenbeheer</h3>
                 <section>
@@ -88,59 +101,73 @@
                     bomen planten, kunstgras plaatsen, kiezels leggen en diverse andere groenwerkzaamheden.
                 </p>
             </article>
-            <article class = "Pasta Pronto">
-                <h3>Zaalmedewerker</h3>
-                <section>
-                    <span class = "bedrijf">Pasta Pronto</span>
-                    <span class ="periode">Mei 2025 - nu</span>
-                </section>
-                <p>
-                    Ervaren in het opnemen en opdienen van klanten. Waaronder
-                    het maken van drankjes en opdekken van tafels en
-                    onderehouden van de planten in de zaak.
-                </p>
-            </article>
-            <article class = "Carrefour Market Paal">
-                <h3>Kassamedewerker + uitpak</h3>
-                <section>
-                    <span class = "bedrijf">Carrefour Market Paal</span>
-                    <span class = "periode">Oktober 2025 - nu</span>
-                </section>
-                <p>
-                    Bij Carrefour Market stond ik aan de kassa, waar ik
-                    verantwoordelijk was voor een vlotte bediening en het correct
-                    beheren en tellen van mijn eigen kassa. Wanneer het rustig was, 
-                    hou ik de winkel netjes, controleerde ik houdbaarheidsdata, 
-                    keek ik groenten en fruit na en vulde ik de rekken aan.
-                </p>
-            </article>
+            <a href="https://www.pastapronto.be/" target="_blank">
+                <article class = "Pasta Pronto">
+                    <h3>Zaalmedewerker</h3>
+                    <section>
+                        <span class = "bedrijf">Pasta Pronto</span>
+                        <span class ="periode">Mei 2025 - nu</span>
+                    </section>
+                    <p>
+                        Ervaren in het opnemen en opdienen van klanten. Waaronder
+                        het maken van drankjes en opdekken van tafels en
+                        onderehouden van de planten in de zaak.
+                    </p>
+                </article>
+            </a>
+            <a href="https://winkels.carrefour.be/nl/s/carrefour/carrefour-market-paal-diestersesteenweg/1761" target="_blank">
+                <article class = "Carrefour Market Paal">
+                    <h3>Kassamedewerker + uitpak</h3>
+                    <section>
+                        <span class = "bedrijf">Carrefour Market Paal</span>
+                        <span class = "periode">Oktober 2025 - nu</span>
+                    </section>
+                    <p>
+                        Bij Carrefour Market stond ik aan de kassa, waar ik
+                        verantwoordelijk was voor een vlotte bediening en het correct
+                        beheren en tellen van mijn eigen kassa. Wanneer het rustig was, 
+                        hou ik de winkel netjes, controleerde ik houdbaarheidsdata, 
+                        keek ik groenten en fruit na en vulde ik de rekken aan.
+                    </p>
+                </article>
+            </a>
         </div>
-        <section class = "hobbys">
+        <section id="hobbys" class = "hobbys">
             <h2>Hobby's</h2>
             <div class = "hobbys-flex"></div>
-            <article class = "Basketball">
-                <h3>Basketball</h3>
-                <p>Ik heb van jongs af aan gevoetbald, maar toen het plezier
-                    wegviel, besloot ik een nieuwe sport uit te proberen. Vijf jaar
-                    geleden ben ik begonnen met basketballen. Sindsdien speel ik bij
-                    de herenploegen van Laakdal (eerste en tweede ploeg).
-                    Ik train twee keer per week en, afhankelijk van het speelschema,
-                    neem ik deel aan één à twee wedstrijden per week.
-                </p>
-            </article>
-            <article class = "Fitness">
-                <h3>Fitness</h3>
-                <p>Omdat ik veel stilzit, vind ik het belangrijk om voldoende te
-                    bewegen. Naast basketbal ga ik daarom vijf keer per week naar
-                     de fitness. Ik focus daarbij op krachttraining om mijn fysieke
-                    weerbaarheid te vergroten en beter te kunnen presteren
-                    tegen volwassen tegenstanders, zodat ik mijn beste prestaties
-                    kan behalen voor mijn team.
-                </p>
-            </article>
-        </div>
+                <article class = "Basketball">
+                    <h3>Basketball</h3>
+                    <p>Ik heb van jongs af aan gevoetbald, maar toen het plezier
+                        wegviel, besloot ik een nieuwe sport uit te proberen. Vijf jaar
+                        geleden ben ik begonnen met basketballen. Sindsdien speel ik bij
+                        de herenploegen van Laakdal (eerste en tweede ploeg).
+                        Ik train twee keer per week en, afhankelijk van het speelschema,
+                        neem ik deel aan één à twee wedstrijden per week.
+                    </p>
+                    <div class="Basketball-image-container">
+                        <img src="images/Schermafbeelding 2025-11-21 165940.png" alt="Basketbal foto">
+                        <img src="images/Schermafbeelding 2025-11-21 170111.png" alt="Basketbal foto">
+                        <img src="images/Schermafbeelding 2025-11-21 170209.png" alt="Basketbal foto">
+                        <img src="images/Schermafbeelding 2025-11-21 170301.png" alt="Basketbal foto">
+                        <img src="images/Schermafbeelding 2025-11-21 170357.png" alt="Basketbal foto">
+                        <img src="images/Schermafbeelding 2025-11-21 170432.png" alt="Basketbal foto">
+                        <img src="images/Schermafbeelding 2025-11-21 170503.png" alt="Basketbal foto">
+                        <img src="images/Schermafbeelding 2025-11-21 170601.png" alt="Basketbal foto">
+                        <img src="images/Schermafbeelding 2025-11-21 170628.png" alt="Basketbal foto">
+                    </div>
+                </article>
+                <article class = "Fitness">
+                    <h3>Fitness</h3>
+                    <p>Omdat ik veel stilzit, vind ik het belangrijk om voldoende te
+                        bewegen. Naast basketbal ga ik daarom vijf keer per week naar
+                        de fitness. Ik focus daarbij op krachttraining om mijn fysieke
+                        weerbaarheid te vergroten en beter te kunnen presteren
+                        tegen volwassen tegenstanders, zodat ik mijn beste prestaties
+                        kan behalen voor mijn team.
+                    </p>
+                </article>
         </section>
-        <section class = "Talenkennis">
+        <section id="talenkennis" class = "Talenkennis">
             <h2>Talen</h2>
             <div class = "talenkennis-flex">
                 <article class = "Nederlands">
