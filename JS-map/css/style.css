@@ -1,46 +1,79 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'sans-serif';
 }
 body{
-    background-color: #f6f6f6;
+    background-color: #f0f0f0; 
 }
 
+/*nav stijl*/
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.nav-links a:hover{
+    color: blue;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.2rem 0.5rem;
+    width: 30rem;
+    height: 10rem;
+    transition: transform 0.3s ease-in-out;
+}
 
 /*zijkant menu*/
-.zijkant-menu{
-    background: linear-gradient(180deg, #5de0e6, #004aad);
-    color: white;
-    width: 50vh;
-    height: 100vh;
-    position: fixed;      
-    top: 0;
-    left: 0;
-    padding: 3rem 1.8rem;      
-    overflow-y:hidden;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+/*.menu-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(180deg, #5de0e6, #004aad);
+  color : white;
+  min-height: 100vh;
+  width: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 3rem 1.8rem;  
+}*/
+.menu-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  background: linear-gradient(180deg, #5de0e6, #004aad);
+  height: 130vh;
+  width: 50vh;
+  padding: 3rem 1.8rem;
 }
 
 /*style voor image*/
 .myprofileimage{
-    height: 20rem;
-    width: 20rem;
-    margin: 2rem;
-    border-radius: 100%;
-    border: 3px solid darkgrey;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: block;
+    margin: 1rem auto 1rem auto;
 }
 .myprofileimage:hover{
     transition: 1s;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-
 /*basis info*/
 .basis-info h1{
     text-align: center;
@@ -69,25 +102,152 @@ body{
 }
 
 /*stylevoor contact-info*/
-.contact-info{
-    margin-top: 2rem;
+.contact-info h2{
+  margin-bottom: 2rem;
+  position: relative;
+  left: 0;
 }
-.contact-info p{
-    margin-bottom: 0.5rem;
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+}
+.contact-container p{
+  background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.contact-container p img{
+    height: 32px;
+}
+.contact-container p::before{
+  content: attr(data-contact);
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-30px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.contact-container p::after{
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid black;
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.contact-container p:hover::before{
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+}
+.contact-container p:hover::after{
+  transform: translateY(-42px) rotate(0);
+  opacity: 1;
+}
+/*style voor socials*/
+.socials h2{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    left: 0;
+}
+.socials-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: absolute;
+    left: 0;
+    margin-left: 1rem;
+}
+.socials-container a{
+  background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.socials-container a img{
+  height: 32px;
+}
+.socials-container a::before{
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-30px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socials-container a:hover{
+  background-color: var(--accent-color);
+  fill: white;
+}
+.socials-container img{
+    fill:white;
+}
+.socials-container a::after{
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--accent-color);
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socials-container a:hover::before{
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+}
+.socials-container a:hover::after{
+  transform: translateY(-42px) rotate(0);
+  opacity: 1;
 }
 
 /*main content*/
-main{
-    margin-left: 280px;
-    padding: 2rem;
+.body-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    width: calc(100% - 50vh);
+    position: relative;
+    left: 50vh;
+    top: 0;
 }
-
-/*titels main content*/
 main h2{
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -96,6 +256,7 @@ main h2{
 /*style voor werkervaring*/
 .Werkervaring{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex: 2;
@@ -109,6 +270,7 @@ main h2{
     padding: 1rem;
     margin-bottom :1.2rem;
     width: 30rem;
+    height: 10rem;
 }
 .Werkervaring article h3{
     margin-bottom: 0.2rem;
@@ -121,9 +283,22 @@ main h2{
     right: 1rem;
     font-weight: bold;
 }
-
-
+.Werkervaring a{
+    text-decoration: none;
+    color: black;
+}
+.Werkervaring a:hover{
+    color: blue;
+ }
 /*style voor hobbys*/
+.hobbys-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    gap: 2rem;
+}
 .hobbys article{
     background-color: white;
     border-radius: 0.5rem;
@@ -132,18 +307,42 @@ main h2{
     width: 30rem;
     margin-bottom: 1.2rem;
 }
+.Basketball .Basketball-image-container{
+    content-visibility: hidden;
+}
+.Basketball:hover{
+    width: 50rem;
+}
+.Basketball:hover .Basketball-image-container{
+    content-visibility: visible;
+}
+.Basketball-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+}
+.Basketball-image-container img {
+  width: calc(33.33% - 10px); /* 3 afbeeldingen per rij minus de gap */
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
 
+/*style voor taalkennis*/
 
-/*style voor Talenkennis*/
 
 /*style voor footer*/
 footer{
-   background-color: darkgrey;
+    background-color: darkgrey;
     color: white;
     padding: 1rem;
-    position: relative;
+    position: fixed;
     width: 100%;
     margin-top: 2rem;
+    bottom: 0;
 }
 .terugnaarboven{
     position: absolute;
