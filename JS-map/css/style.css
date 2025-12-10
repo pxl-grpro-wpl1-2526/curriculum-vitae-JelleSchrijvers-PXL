@@ -336,7 +336,35 @@ body {
     margin-bottom: 0.6rem;
 }
 
-
+/*tabelen-talen*/
+.talen-tabel {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+.talen-tabel th {
+    background-color: #004aad;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+.talen-tabel td {
+    padding: 0.9rem 1rem;
+}
+/* afwisselende rijen */
+.talen-tabel tbody tr:nth-child(odd) {
+    background-color: #e3f7ff;
+}
+.talen-tabel tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+.talen-tabel tbody tr:hover {
+    background-color: #5de0e6;
+    color: white;
+    transition: 0.3s ease;
+}
 
 /* Image Gallery - 3 visible at once, scroll horizontally through all 9 */
 .image-gallery {
