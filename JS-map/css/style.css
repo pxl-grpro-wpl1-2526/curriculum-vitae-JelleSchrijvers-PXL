@@ -35,7 +35,7 @@ body {
     z-index: 1000;
 }
 
-/* Navigation */
+/*navigation*/
 .nav-menu {
     position: sticky;
     top: 0;
@@ -245,7 +245,7 @@ body {
     flex-direction: column;
 }
 
-/* Sections */
+/*sections*/
 .content-section {
     height: 100vh;
     scroll-snap-align: start;
@@ -275,7 +275,7 @@ body {
     display: inline-block;
 }
 
-/* Cards Container */
+/*kaart-container*/
 .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -283,7 +283,7 @@ body {
     margin-top: 2rem;
 }
 
-/* Card Styling */
+/*kaart-styling*/
 .card {
     background-color: white;
     border-radius: 0.8rem;
@@ -327,7 +327,7 @@ body {
     margin: 0;
 }
 
-/* Meta row: company left, period right */
+/* company links, periode rechts */
 .meta-row {
     display: flex;
     justify-content: space-between;
@@ -366,7 +366,53 @@ body {
     transition: 0.3s ease;
 }
 
-/* Image Gallery - 3 visible at once, scroll horizontally through all 9 */
+/*programeertalen*/
+.programeertalen h2 {
+    margin-bottom: 1.5rem;
+}
+.skills-container {
+   display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per rij */
+    gap: 1.5rem;
+    width: 100%;
+}
+.skills-container::-webkit-scrollbar {
+    height: 8px;
+}
+.skills-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.skills-container::-webkit-scrollbar-thumb {
+    background: #5de0e6;
+    border-radius: 10px;
+}
+.skills-container::-webkit-scrollbar-thumb:hover {
+    background: #004aad;
+}
+.skill {
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+.skill-name {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+.progress {
+    width: 100%;
+    background: #e5e5e5;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 100%;
+    background: #5de0e6;
+    transition: width 0.3s ease;
+}
+
+/*basket-foto's*/
 .image-gallery {
     display: flex;
     gap: 1rem;
@@ -415,7 +461,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/*FOOTER*/
+/*footer*/
 .footer {
     position: fixed;
     bottom: 0;
