@@ -1,197 +1,173 @@
 <!DOCTYPE html>
-    <html lang="nl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="iconen/coding.png">
-        <!-- stylesheet voor laptop --> 
-        <link
-                rel="stylesheet"
-                media="screen and (min-width: 992px)"
-                href="css/style.css"
-        />
-        <!--stylesheet voor mobiel-->
-        <link
-                rel="stylesheet"
-                media="screen and (max-width: 576px)"
-                href="css/style-mobile.css"
-        />
-        <!--stylesheet voor tablet-->
-        <link
-                rel="stylesheet"
-                media="screen and (min-width: 576px) and (max-width: 992px)"
-                href="css/style-tablet.css"
-        />
-        <title>CV-Jelle-Schrijvers</title>
-    </head>
-    <body id ="naar-top">
-        <div class="grid-container"> 
-            <header>
-                <div class="menu-container">
-                    <nav>
-                        <ul class="nav-links">
-                            <li><a href="#werkervaring">Werkervaring</a></li>
-                            <li><a href="#opleiding">Opleiding</a></li>
-                            <li><a href="#hobbys">Hobby's</a></li>
-                            <li><a href="#talenkennis">Talen</a></li>
-                        </ul>
-                    </nav>
-                    <article class="basis-info">
-                        <a href="https://www.linkedin.com/in/jelleschrijvers/" target="_blank"><img class="myprofileimage" src="images/profiel.jpg" alt="Jelle Schrijvers"></a>
-                        <h1>Jelle Schrijvers</h1>
-                        <h2>Student</h2>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="iconen/coding.png">
+    <!-- stylesheet voor laptop --> 
+    <link
+            rel="stylesheet"
+            media="screen and (min-width: 992px)"
+            href="css/style.css"
+    />
+    <!--stylesheet voor mobiel-->
+    <link
+            rel="stylesheet"
+            media="screen and (max-width: 576px)"
+            href="css/style-mobile.css"
+    />
+    <!--stylesheet voor tablet-->
+    <link
+            rel="stylesheet"
+            media="screen and (min-width: 576px) and (max-width: 992px)"
+            href="css/style-tablet.css"
+    />
+    <title>CV-Jelle-Schrijvers</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <article class="basis-info">
+            <a href="https://www.linkedin.com/in/jelleschrijvers/" target="_blank">
+                <img class="myprofileimage" src="images/profiel.jpg" alt="Jelle Schrijvers">
+            </a>
+            <h1>Jelle Schrijvers</h1>
+            <h2>Student</h2>
+        </article>
+        <article class="over-mij">
+            <h2>Info over mij</h2>
+            <p>Ik ben Jelle Schrijvers, student aan PXL-Digital waar ik het graduaat Programmeren volg. Ik heb een sterke interesse in softwareontwikkeling en het bouwen van eigen digitale projecten. Ik leer snel, denk analytisch en werk graag gestructureerd. Ik heb ervaring met C#, HTML, CSS, JavaScript en SQL. Ik ben gemotiveerd om mijn vaardigheden verder te ontwikkelen binnen een professionele omgeving.</p>
+        </article>
+        <section class="contact-info">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <p data-contact="+32 474 02 82 73"><img class="contact-icon" src="iconen/telephone_684812.png" alt="Telefoon"></p>
+                <p data-contact="jelleschrijvers07@gmail.com"><img class="contact-icon" src="iconen/gmail_299393.png" alt="E-mail"></p>
+                <p data-contact="Oude Barrier 66, Beringen 3583"><img class="contact-icon" src="iconen/placeholder_738521.png" alt="Locatie"></p>
+            </div>
+        </section>
+        <section class="socials">
+            <h2>Socials</h2>
+            <div class="socials-container">
+                <a data-social="GitHub" style="--accent-color: #333" href="https://github.com/JelleSchrijvers-PXL" target="_blank">
+                    <img class="social-icon" src="iconen/github.svg" alt="GitHub">
+                </a>
+                <a data-social="Instagram" style="--accent-color: #E1306C" href="https://www.instagram.com/jelle_schrijvers/" target="_blank">
+                    <img class="social-icon" src="iconen/instagram.svg" alt="Instagram">
+                </a>
+                <a data-social="X" style="--accent-color: #000" href="https://x.com/JSchrijver91615" target="_blank">
+                    <img class="social-icon" src="iconen/x.svg" alt="X">
+                </a>
+            </div>
+        </section>
+    </aside>
+    <main class="main-content">
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#werkervaring">Werkervaring</a></li>
+                <li><a href="#opleiding">Opleiding</a></li>
+                <li><a href="#hobbys">Hobby's</a></li>
+                <li><a href="#talenkennis">Talen</a></li>
+            </ul>
+        </nav>
+        <section id="werkervaring" class="content-section">
+            <div class="section-content">
+                <h2>Werkervaring</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <h3>Uitvoerder groenbeheer</h3>
+                        <div class="meta-row">
+                            <span class="bedrijf">Geerts Waterwerken</span>
+                            <span class="periode">Juni 2024 - Augustus 2024</span>
+                        </div>
+                        <p>Ervaren in het onderhoud van groenvoorzieningen en openbare ruimtes, waaronder het scheren van hagen, onderhouden van beken en plassen, en het uitvoeren van diverse groenwerkzaamheden zoals snoeien en maaien.</p>
                     </article>
-                    <article class="over-mij">
-                        <h2>info over mij</h2>
-                        <p>Ik ben Jelle Schrijvers, student aan PXL-Digital waar ik het graduaat Programmeren volg.
-                        Ik heb een sterke interesse in softwareontwikkeling en het bouwen van eigen digitale projecten.
-                        Ik leer snel, denk analytisch en werk graag gestructureerd. Ik heb ervaring met C#, HTML, CSS, JavaScript en SQL.
-                        Ik ben gemotiveerd om mijn vaardigheden verder te ontwikkelen binnen een professionele omgeving.
-                        </p>
+                    <article class="card">
+                        <h3>Uitvoerder groenbeheer</h3>
+                        <div class="meta-row">
+                            <span class="bedrijf">Michel Schrijvers</span>
+                            <span class="periode">Juli 2023 - nu</span>
+                        </div>
+                        <p>Ervaren in het onderhoud en aanleggen van tuinen, waaronder het scheren van hagen, bomen planten, kunstgras plaatsen, kiezels leggen en diverse andere groenwerkzaamheden.</p>
                     </article>
-                    <section class="contact-info">
-                        <h2>Contact</h2>
-                        <div class="contact-container">
-                            <p data-contact="+32 474 02 82 73"><img class="contact-icon" src="iconen/telephone_684812.png" alt="Telefoon icoon"></p>
-                            <p data-contact="jelleschrijvers07@gmail.com"><img class="contact-icon" src="iconen/gmail_299393.png" alt="E-mail icoon"></p>
-                            <p data-contact="Oude Barrier 66, Beringen 3583"><img class="contact-icon" src="iconen/placeholder_738521.png" alt="Locatie icoon"></p>
+                    <article class="card">
+                        <h3>Zaalmedewerker</h3>
+                        <div class="meta-row">
+                            <span class="bedrijf">Pasta Pronto</span>
+                            <span class="periode">Mei 2025 - nu</span>
                         </div>
-                    </section>
-                    <section class="socials">
-                        <h2>Socials</h2>
-                        <div class="socials-container">
-                            <a data-social="GitHub" style="--accent-color: #333" href="https://github.com/JelleSchrijvers-PXL" target="_blank"><img class="social-icon" src="iconen/github.svg" alt="GitHub icoon"></a>
-                            <a data-social="Instagram" style="--accent-color: #E1306C" href="https://www.instagram.com/jelle_schrijvers/" target="_blank"><img class="social-icon" src="iconen/instagram.svg" alt="instagram icoon"></a>
-                            <a data-social="X" style="--accent-color: #000" href="https://x.com/JSchrijver91615" target="_blank"><img class="social-icon" src="iconen/x.svg" alt="X icoon"></a>   
+                        <p>Ervaren in het opnemen en opdienen van klanten. Waaronder het maken van drankjes en opdekken van tafels en onderhouden van de planten in de zaak.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Kassamedewerker + uitpak</h3>
+                        <div class="meta-row">
+                            <span class="bedrijf">Carrefour Market Paal</span>
+                            <span class="periode">Oktober 2025 - nu</span>
                         </div>
-                    </section>
+                        <p>Bij Carrefour Market stond ik aan de kassa, waar ik verantwoordelijk was voor een vlotte bediening en het correct beheren en tellen van mijn eigen kassa. Wanneer het rustig was, hou ik de winkel netjes, controleerde ik houdbaarheidsdata, keek ik groenten en fruit na en vulde ik de rekken aan.</p>
+                    </article>
                 </div>
-            </header>
-            <main> 
-                <div class="body-container">
-                    <h2>Werkervaring</h2>
-                    <div id="Werkervaring" class = "Werkervaring">
-                        <article class = "Geerts Waterwerken">
-                            <h3>Uitvoerder groenbeheer</h3>
-                            <section>
-                                <span class = "bedrijf">Geerts Waterwerken</span>
-                                <span class = "periode">Juni 2024 - Augustus 2024</span>
-                            </section>
-                            <p>Ervaren in het onderhoud van groenvoorzieningen en
-                            openbare ruimtes, waaronder het scheren van hagen,
-                            onderhouden van beken en plassen, en het uitvoeren van
-                            diverse groenwerkzaamheden zoals snoeien en maaien.
-                            </p>
-                        </article>
-                        <article class = "Michel Schrijvers">
-                            <h3>Uitvoerder groenbeheer</h3>
-                            <section>
-                                <span class = "bedrijf">Michel Schrijvers</span>
-                                <span class ="periode">Juli 2023 - nu</span>
-                            </section>
-                            <p>
-                                Ervaren in het onderhoud en aanleggen van tuinen, waaronder het scheren van hagen,
-                                bomen planten, kunstgras plaatsen, kiezels leggen en diverse andere groenwerkzaamheden.
-                            </p>
-                        </article>
-                        <a href="https://www.pastapronto.be/" target="_blank">
-                            <article class = "Pasta Pronto">
-                                <h3>Zaalmedewerker</h3>
-                                <section>
-                                    <span class = "bedrijf">Pasta Pronto</span>
-                                    <span class ="periode">Mei 2025 - nu</span>
-                                </section>
-                                <p>
-                                    Ervaren in het opnemen en opdienen van klanten. Waaronder
-                                    het maken van drankjes en opdekken van tafels en
-                                    onderehouden van de planten in de zaak.
-                                </p>
-                            </article>
-                        </a>
-                        <a href="https://winkels.carrefour.be/nl/s/carrefour/carrefour-market-paal-diestersesteenweg/1761" target="_blank">
-                            <article class = "Carrefour Market Paal">
-                                <h3>Kassamedewerker + uitpak</h3>
-                                <section>
-                                    <span class = "bedrijf">Carrefour Market Paal</span>
-                                    <span class = "periode">Oktober 2025 - nu</span>
-                                </section>
-                                <p>
-                                    Bij Carrefour Market stond ik aan de kassa, waar ik
-                                    verantwoordelijk was voor een vlotte bediening en het correct
-                                    beheren en tellen van mijn eigen kassa. Wanneer het rustig was, 
-                                    hou ik de winkel netjes, controleerde ik houdbaarheidsdata, 
-                                    keek ik groenten en fruit na en vulde ik de rekken aan.
-                                </p>
-                            </article>
-                        </a>
-                    </div>
-                    <section id="opleiding" class="opleiding">
-                        <h2>Opleidingen</h2>
-                        <div class="opleiding-flex"></div>
-                            <article class="PXL">
-                                <h3>PXL-Digital</h3>
-                                <h4>Graduaat programmeren</h4>
-                                <h5>september 2025 - juni 2027</h5>
-                                <p>Vaardigheden: C#, HTML, CSS, JavaScript, SQL, Git, Github</p>
-                            </article>
-                        </div>
-                    </section>
-                    <section id="hobbys" class = "hobbys">
-                        <h2>Hobby's</h2>
-                        <div class = "hobbys-flex"></div>
-                            <article class = "Basketball">
-                                <h3>Basketball</h3>
-                                <p>Ik heb van jongs af aan gevoetbald, maar toen het plezier
-                                    wegviel, besloot ik een nieuwe sport uit te proberen. Vijf jaar
-                                    geleden ben ik begonnen met basketballen. Sindsdien speel ik bij
-                                    de herenploegen van Laakdal (eerste en tweede ploeg).
-                                    Ik train twee keer per week en, afhankelijk van het speelschema,
-                                    neem ik deel aan één à twee wedstrijden per week.
-                                </p>
-                                <div class="Basketball-image-container">
-                                    <img src="images/Schermafbeelding 2025-11-21 165940.png" alt="Basketbal foto">
-                                    <img src="images/Schermafbeelding 2025-11-21 170111.png" alt="Basketbal foto">
-                                    <img src="images/Schermafbeelding 2025-11-21 170209.png" alt="Basketbal foto">
-                                    <img src="images/Schermafbeelding 2025-11-21 170301.png" alt="Basketbal foto">
-                                    <img src="images/Schermafbeelding 2025-11-21 170357.png" alt="Basketbal foto">
-                                    <img src="images/Schermafbeelding 2025-11-21 170432.png" alt="Basketbal foto">
-                                    <img src="images/Schermafbeelding 2025-11-21 170503.png" alt="Basketbal foto">
-                                    <img src="images/Schermafbeelding 2025-11-21 170601.png" alt="Basketbal foto">
-                                    <img src="images/Schermafbeelding 2025-11-21 170628.png" alt="Basketbal foto">
-                                </div>
-                            </article>
-                            <article class = "Fitness">
-                                <h3>Fitness</h3>
-                                <p>Omdat ik veel stilzit, vind ik het belangrijk om voldoende te
-                                    bewegen. Naast basketbal ga ik daarom vijf keer per week naar
-                                    de fitness. Ik focus daarbij op krachttraining om mijn fysieke
-                                    weerbaarheid te vergroten en beter te kunnen presteren
-                                    tegen volwassen tegenstanders, zodat ik mijn beste prestaties
-                                    kan behalen voor mijn team.
-                                </p>
-                            </article>
-                    </section>
-                    <section id="talenkennis" class = "Talenkennis">
-                        <h2>Talen</h2>
-                        <div class = "talenkennis-flex">
-                            <article class = "Nederlands">
-                                <p>Nederlands</p>
-                            </article>
-                            <article class = "Engels">
-                                <p>Engels</p>
-                            </article>
-                            <article class = "Frans">
-                                <p>Frans</p>
-                            </article>
-                        </div>
-                    </section>
+            </div>
+        </section>
+        <section id="opleiding" class="content-section">
+            <div class="section-content">
+                <h2>Opleidingen</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <h3>PXL-Digital</h3>
+                        <h4>Graduaat programmeren</h4>
+                        <p><strong>September 2025 - Juni 2027</strong></p>
+                        <p>Vaardigheden: C#, HTML, CSS, JavaScript, SQL, Git, Github</p>
+                    </article>
                 </div>
-            </main>
-            <footer>
-                <p class="naamenklas">Jelle Schrijvers 1PROE</p>
-                <p class="opdracht">Opdracht curriculum vitae</p>
-                <a href="#naar-top" class="terugnaarboven">Terug naar boven</a>
-            </footer>
-        </div>
-    </body>
+            </div>
+        </section>
+        <section id="hobbys" class="content-section">
+            <div class="section-content">
+                <h2>Hobby's</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <h3>Basketball</h3>
+                        <p>Ik heb van jongs af aan gevoetbald, maar toen het plezier wegviel, besloot ik een nieuwe sport uit te proberen. Vijf jaar geleden ben ik begonnen met basketballen. Sindsdien speel ik bij de herenploegen van Laakdal (eerste en tweede ploeg). Ik train twee keer per week en, afhankelijk van het speelschema, neem ik deel aan één à twee wedstrijden per week.</p>
+                        <div class="image-gallery">
+                            <img src="images/Schermafbeelding 2025-11-21 165940.png" alt="Basketball 1">
+                            <img src="images/Schermafbeelding 2025-11-21 170111.png" alt="Basketball 2">
+                            <img src="images/Schermafbeelding 2025-11-21 170209.png" alt="Basketball 3">
+                            <img src="images/Schermafbeelding 2025-11-21 170301.png" alt="Basketball 4">
+                            <img src="images/Schermafbeelding 2025-11-21 170357.png" alt="Basketball 5">
+                            <img src="images/Schermafbeelding 2025-11-21 170432.png" alt="Basketball 6">
+                            <img src="images/Schermafbeelding 2025-11-21 170503.png" alt="Basketball 7">
+                            <img src="images/Schermafbeelding 2025-11-21 170601.png" alt="Basketball 8">
+                            <img src="images/Schermafbeelding 2025-11-21 170628.png" alt="Basketball 9">
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Fitness</h3>
+                        <p>Omdat ik veel stilzit, vind ik het belangrijk om voldoende te bewegen. Naast basketbal ga ik daarom vijf keer per week naar de fitness. Ik focus daarbij op krachttraining om mijn fysieke weerbaarheid te vergroten en beter te kunnen presteren tegen volwassen tegenstanders, zodat ik mijn beste prestaties kan behalen voor mijn team.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="talenkennis" class="content-section">
+            <div class="section-content">
+                <h2>Talen</h2>
+                <div class="cards-container">
+                    <article class="card language-card">
+                        <p>Nederlands</p>
+                    </article>
+                    <article class="card language-card">
+                        <p>Engels</p>
+                    </article>
+                    <article class="card language-card">
+                        <p>Frans</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="naamenklas">Jelle Schrijvers 1PROE</p>
+        <p class="opdracht">Opdracht curriculum vitae</p>
+        <a href="#werkervaring" class="terugnaarboven">↑ Terug naar boven</a>
+    </footer>
+</body>
 </html>
