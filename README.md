@@ -1,8 +1,25 @@
 # 📄 Online Curriculum Vitae (CV)
 
-Deze repository bevat mijn **Online Curriculum Vitae (CV)** voor het opleidingsonderdeel **Werkplekleren 1** binnen het graduaat **Programmeren (PXL)**.  
-De CV werd opgebouwd met **HTML & CSS** en vormt een onderdeel van de evaluatie voor deze cursus.
+Deze repository bevat mijn **Online Curriculum Vitae (CV)** voor het opleidingsonderdeel **Werkplekleren 1** binnen het graduaat **Programmeren (PXL)**.  De CV werd opgebouwd met **HTML & CSS** en vormt een onderdeel van de evaluatie voor deze cursus.
 
+## ✔️ Checklist Functionele Vereisten
+
+- [ ] **WEB-01** – De vereiste inhoud is aanwezig  
+- [ ] **WEB-02** – Hover op profielfoto toont een schaduw  
+- [ ] **WEB-03** – Klik op profielfoto opent LinkedIn-profiel in een nieuw tabblad  
+- [ ] **WEB-04** – Talenkennis in tabel met afwisselende rij-opmaak  
+- [ ] **WEB-05** – Werkervaringen in nette lijst met functie, organisatie, periode en beschrijving  
+- [ ] **WEB-06** – Footer bevat: links (naam + klas), midden (tekst "Opdracht curriculum vitae"), rechts (knop Terug naar boven)  
+- [ ] **WEB-07** – Knop Terug naar boven scrolt naar het begin van de pagina  
+- [ ] **WEB-08** – Website-look & feel: subtiele hover-effecten, animaties, aantrekkelijke typografie/colors  
+- [ ] **WEB-09** – CV is opgesteld in Nederlands of Engels  
+- [ ] **WEB-10** – Consistent gebruik van lettertypes, kleuren en stijlen  
+- [ ] **WEB-11** – Layout blijft netjes bij resize: leesbaar, klikbaar, automatischer herschikking  
+- [ ] **WEB-12** – Mobiele weergave toont alternatief i.p.v. tabel; desktop toont weer tabel  
+- [ ] **WEB-13** – Correcte media-queries gebruikt:  
+  - Mobiel: < 576px  
+  - Desktop: ≥ 992px  
+  - (Optioneel) Tablet: 576px – 992px  
 
 ## 📅 Deadline
 
