@@ -282,6 +282,48 @@ body {
     gap: 2rem;
     margin-top: 2rem;
 }
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.cards-hardskills h4,
+.cards-softskills h4{
+    position: sticky;
+}
+.cards-hardskills,
+.cards-softskills {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 35rem;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.cards-hardskills::-webkit-scrollbar,
+.cards-softskills::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cards-hardskills::-webkit-scrollbar-track,
+.cards-softskills::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.cards-hardskills::-webkit-scrollbar-thumb,
+.cards-softskills::-webkit-scrollbar-thumb {
+    background: #5de0e6;
+    border-radius: 10px;
+}
+
+.cards-hardskills::-webkit-scrollbar-thumb:hover,
+.cards-softskills::-webkit-scrollbar-thumb:hover {
+    background: #004aad;
+}
+
 
 /*kaart-styling*/
 .card {
