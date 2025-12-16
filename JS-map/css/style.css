@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     background-color: #f0f0f0;
@@ -36,6 +31,9 @@ body {
 }
 
 /*navigation*/
+.menu-icon{
+    display: none;
+}
 .nav-menu {
     position: sticky;
     top: 0;
@@ -71,6 +69,37 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
     border-bottom-color: #5de0e6;
 }
+/* Menu bar tevoorschijn pas vanaf (1310px)*/
+@media screen and (max-width:1310px){
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 1rem;
+    }
+    .nav-links {
+        display: none;
+        list-style: none;
+        background-color: #f2f2f2;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+    .nav-links li {
+        margin-bottom: 0.75rem;
+    }
+    .nav-menu {
+        position: fixed;
+       
+        padding: 1rem;
+    }
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
 
 /*basis-info*/
 .basis-info {
@@ -108,7 +137,6 @@ body {
 .over-mij h2 {
     font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
     margin-bottom: 0.5rem;
     opacity: 0.95;
 }
@@ -125,9 +153,7 @@ body {
 .contact-info h2 {
     font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
     margin-bottom: 0.6rem;
-    opacity: 0.95;
 }
 .contact-container {
     display: flex;
@@ -139,8 +165,8 @@ body {
     background-color: white;
     padding: 1em;
     border-radius: 50%;
-    height: 64px;
-    width: 64px;
+    height: 4rem;
+    width: 4rem;
     display: grid;
     place-items: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -152,14 +178,14 @@ body {
     transform: scale(1.1);
 }
 .contact-icon {
-    height: 32px;
+    height: 2rem;
 }
 .contact-container p::before {
     content: attr(data-contact);
     position: absolute;
     color: white;
     padding: 0.5em 1em;
-    border-radius: 100px;
+    border-radius: 10rem;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-50px);
@@ -180,7 +206,6 @@ body {
 .socials h2 {
     font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
     margin-bottom: 0.6rem;
     opacity: 0.95;
 }
@@ -194,8 +219,8 @@ body {
     background-color: white;
     padding: 1em;
     border-radius: 50%;
-    height: 64px;
-    width: 64px;
+    height: 4rem;
+    width: 4rem;
     display: grid;
     place-items: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -209,7 +234,7 @@ body {
     transform: scale(1.15);
 }
 .social-icon {
-    height: 32px;
+    height: 2rem;
     transition: filter 0.3s ease;
 }
 .socials-container a:hover .social-icon {
@@ -221,7 +246,7 @@ body {
     background-color: var(--accent-color);
     color: white;
     padding: 0.5em 1em;
-    border-radius: 100px;
+    border-radius: 10rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-50px);
     opacity: 0;
@@ -262,7 +287,7 @@ body {
 }
 .section-content {
     width: 100%;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 .section-content h2 {
@@ -304,19 +329,19 @@ body {
 
 .cards-hardskills::-webkit-scrollbar,
 .cards-softskills::-webkit-scrollbar {
-    width: 8px;
+    width: 0.8rem;
 }
 
 .cards-hardskills::-webkit-scrollbar-track,
 .cards-softskills::-webkit-scrollbar-track {
     background: #f1f1f1;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .cards-hardskills::-webkit-scrollbar-thumb,
 .cards-softskills::-webkit-scrollbar-thumb {
     background: #5de0e6;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .cards-hardskills::-webkit-scrollbar-thumb:hover,
@@ -332,7 +357,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     transition: all 0.3s ease;
-    border-left: 4px solid #5de0e6;
+    border-left: 0.4rem solid #5de0e6;
     position: relative;
 }
 .card:hover {
@@ -406,52 +431,6 @@ body {
     background-color: #5de0e6;
     color: white;
     transition: 0.3s ease;
-}
-
-/*programeertalen*/
-.programeertalen h2 {
-    margin-bottom: 1.5rem;
-}
-.skills-container {
-   display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 per rij */
-    gap: 1.5rem;
-    width: 100%;
-}
-.skills-container::-webkit-scrollbar {
-    height: 8px;
-}
-.skills-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-}
-.skills-container::-webkit-scrollbar-thumb {
-    background: #5de0e6;
-    border-radius: 10px;
-}
-.skills-container::-webkit-scrollbar-thumb:hover {
-    background: #004aad;
-}
-.skill {
-    margin-bottom: 0;
-    flex-shrink: 0;
-}
-.skill-name {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-.progress {
-    width: 100%;
-    background: #e5e5e5;
-    height: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.progress-bar {
-    height: 100%;
-    background: #5de0e6;
-    transition: width 0.3s ease;
 }
 
 /*basket-foto's*/
@@ -537,4 +516,139 @@ body {
 .terugnaarboven:hover {
     color: #ffff99;
     transform: translateY(-2px);
+}
+/* TABLET LAYOUT (576px – 992px) */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    /* Algemene layout */
+    body {
+        display: block;
+    }
+
+    /*SIDEBAR*/
+    .sidebar {
+        width: 22rem;
+        padding: 1.2rem 0.8rem;
+        gap: 1rem;
+    }
+
+    /*MAIN CONTENT*/
+    .main-content {
+        margin-left: 22rem;
+        height: auto;
+        overflow-y: auto;
+        scroll-snap-type: none;
+    }
+
+    /*NAVIGATIE*/
+    .nav-menu {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        gap: 0.6rem;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /*BASIS INFO*/
+    .myprofileimage {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .basis-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .basis-info h2 {
+        font-size: 0.95rem;
+    }
+
+    .over-mij p {
+        font-size: 0.85rem;
+    }
+
+    /*CONTACT & SOCIALS*/
+    .contact-container,
+    .socials-container {
+        gap: 1rem;
+    }
+
+    .contact-container p,
+    .socials-container a {
+        width: 56px;
+        height: 56px;
+    }
+
+    .contact-icon,
+    .social-icon {
+        height: 28px;
+    }
+
+    /*SECTIES*/
+    .content-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 1.5rem;
+        scroll-snap-align: none;
+    }
+
+    .section-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /*CARDS*/
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    .cards-hardskills,
+    .cards-softskills {
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 0;
+    }
+
+    /*SKILLS*/
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .skill-name {
+        font-size: 0.9rem;
+    }
+
+    /*IMAGE GALLERY*/
+    .image-gallery img {
+        width: calc(50% - 0.5rem);
+        height: 140px;
+    }
+
+    /*FOOTER*/
+    .footer {
+        position: static;
+        margin-left: 22rem;
+        padding: 1.2rem;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .opdracht {
+        flex: 100%;
+        order: 3;
+        margin-top: 0.5rem;
+    }
 }
