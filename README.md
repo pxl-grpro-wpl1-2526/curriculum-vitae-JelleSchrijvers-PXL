@@ -40,7 +40,8 @@ Deze repository dient als bron voor de geüploade URL naar mijn online CV.
 
 - 📁 **/assets** – Afbeeldingen, icons of documenten gebruikt in het CV  
 - 📄 **index.html** – De volledige HTML-structuur van het CV  
-- 🎨 **style.css** – Styling en opmaak van het CV  
+- 🎨 **style.css** – Styling en opmaak van het CV
+- ⚙️ **script.js** – Script voor responsive navbar vanaf 1310px
 
 
 ## 🛠️ Technologieën
