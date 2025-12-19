@@ -32,6 +32,9 @@ body {
     display: none;
     background: none;
 }
+button{
+    display: none;
+}
 
 /*navigation*/
 .menu-icon{
@@ -702,8 +705,6 @@ body {
     .content-section {
         min-height: auto;
         height: auto;
-        scroll-snap-align: none;
-        scroll-snap-stop: unset;
         padding: 1.5rem 1rem;
     }
 
