@@ -630,70 +630,43 @@ body {
     }
 
     /* Sidebar becomes full-width header on mobile */
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        background: linear-gradient(180deg, #5de0e6, #004aad);
-        padding: 1.2rem 1rem;
-        margin-bottom: 0;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    .sidebar{
+        height: 6rem;
+        display: block;
+    }
+    .basis-info {
+        display: flex;
+        align-items: center;
         gap: 1rem;
     }
-
-    /* Profile image scales with viewport */
-    .myprofileimage {
-        width: 5rem;
-        height: 5rem;
+    .name-functie {
+        display: flex;
+        flex-direction: column;
     }
 
-    /* Contact and social icons scale */
-    .contact-container,
-    .socials-container {
-        flex-direction: row;
-        gap: 0.8rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .contact-container p,
-    .socials-container a {
-        width: 2.2rem;
-        height: 2.2rem;
-        padding: 0.4rem;
-    }
-
-    .contact-icon,
-    .social-icon {
-        width: 1.3rem;
-        height: 1.3rem;
-    }
-
-    .contact-info h2,
-    .socials h2 {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .basis-info h1 {
+    .dropdown-icon {
+        display: block;
+        margin-left: auto;
+        background: none;
+        border: none;
+        color: white;
         font-size: 1.5rem;
-        margin-bottom: 0.3rem;
+        cursor: pointer;
+    }
+    .basis-info img {
+        width: 4rem;
+        height: 4rem;
     }
 
-    .basis-info h2 {
-        font-size: 0.9rem;
+    .over-mij{
+        display: none;
     }
-
-    .over-mij h2 {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
+    .contact-info{
+        display: none;
     }
-
-    .over-mij p {
-        font-size: 0.85rem;
-        line-height: 1.4;
+    .socials{
+        display: none;
     }
-
     /* Main content full width */
     .main-content {
         margin-left: 0;
@@ -703,6 +676,7 @@ body {
         flex-direction: column;
         overflow-y: auto;
     }
+    
 
     /* Navigation adjusts to mobile */
     .nav-menu {
