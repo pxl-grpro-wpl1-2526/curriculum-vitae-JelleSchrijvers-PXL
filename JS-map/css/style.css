@@ -683,6 +683,7 @@ button{
     }
 
     /* Navigation adjusts to mobile */
+
     .nav-menu {
         width: 100%;
         padding: 0.8rem;
@@ -712,6 +713,9 @@ button{
     .section-content h2 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
+    }
+    #werkervaring{
+        margin-top:5rem;
     }
 
     .section-content h3 {
