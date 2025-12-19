@@ -23,12 +23,12 @@ function ToonSideBar() {
         Contact.style.display = "none";
         Socials.style.display = "none";
         SideBarLength.style.height = "6rem";
-        dropdownIcon.src ="/JS-map/iconen/chevron-down-svgrepo-com.svg";
+        dropdownIcon.src ="/JS-map/iconen/chevron-down-svgrepo-com-nobg.svg";
     }else {
         SideBar.style.display = "block";
         Contact.style.display = "block";
         Socials.style.display = "block";
         SideBarLength.style.height = "32rem";
-        dropdownIcon.src = "/JS-map/iconen/chevron-up-svgrepo-com.svg";
+        dropdownIcon.src = "/JS-map/iconen/chevron-up-svgrepo-com-nobg.svg";
     }
 }
