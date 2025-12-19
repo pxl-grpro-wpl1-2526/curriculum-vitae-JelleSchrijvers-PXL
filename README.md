@@ -7,11 +7,11 @@ Deze repository bevat mijn **Online Curriculum Vitae (CV)** voor het opleidingso
 - [x] **WEB-01** – De vereiste inhoud is aanwezig  
 - [x] **WEB-02** – Hover op profielfoto toont een schaduw  
 - [x] **WEB-03** – Klik op profielfoto opent LinkedIn-profiel in een nieuw tabblad  
-- [ ] **WEB-04** – Talenkennis in tabel met afwisselende rij-opmaak  
-- [ ] **WEB-05** – Werkervaringen in nette lijst met functie, organisatie, periode en beschrijving  
+- [x] **WEB-04** – Talenkennis in tabel met afwisselende rij-opmaak  
+- [x] **WEB-05** – Werkervaringen in nette lijst met functie, organisatie, periode en beschrijving  
 - [x] **WEB-06** – Footer bevat: links (naam + klas), midden (tekst "Opdracht curriculum vitae"), rechts (knop Terug naar boven)  
 - [x] **WEB-07** – Knop Terug naar boven scrolt naar het begin van de pagina  
-- [ ] **WEB-08** – Website-look & feel: subtiele hover-effecten, animaties, aantrekkelijke typografie/colors  
+- [x] **WEB-08** – Website-look & feel: subtiele hover-effecten, animaties, aantrekkelijke typografie/colors  
 - [x] **WEB-09** – CV is opgesteld in Nederlands of Engels  
 - [ ] **WEB-10** – Consistent gebruik van lettertypes, kleuren en stijlen  
 - [ ] **WEB-11** – Layout blijft netjes bij resize: leesbaar, klikbaar, automatischer herschikking  
@@ -48,4 +48,4 @@ Deze repository dient als bron voor de geüploade URL naar mijn online CV.
 
 - 🧩 **HTML** – Structuur van de CV-pagina  
 - 🎨 **CSS** – Styling, layout, kleurenpalet 
-- 🖼️ **Flexbox / Grid** 
+- 🖼️ **Flexbox / Grid**
