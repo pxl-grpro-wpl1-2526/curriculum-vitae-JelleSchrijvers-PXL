@@ -13,8 +13,8 @@ Deze repository bevat mijn **Online Curriculum Vitae (CV)** voor het opleidingso
 - [x] **WEB-07** – Knop Terug naar boven scrolt naar het begin van de pagina  
 - [x] **WEB-08** – Website-look & feel: subtiele hover-effecten, animaties, aantrekkelijke typografie/colors  
 - [x] **WEB-09** – CV is opgesteld in Nederlands of Engels  
-- [ ] **WEB-10** – Consistent gebruik van lettertypes, kleuren en stijlen  
-- [ ] **WEB-11** – Layout blijft netjes bij resize: leesbaar, klikbaar, automatischer herschikking  
+- [x] **WEB-10** – Consistent gebruik van lettertypes, kleuren en stijlen  
+- [x] **WEB-11** – Layout blijft netjes bij resize: leesbaar, klikbaar, automatischer herschikking  
 - [ ] **WEB-12** – Mobiele weergave toont alternatief i.p.v. tabel; desktop toont weer tabel  
 - [ ] **WEB-13** – Correcte media-queries gebruikt:  
   - Mobiel: < 576px  
