@@ -32,7 +32,7 @@ body {
     display: none;
     background: none;
 }
-button{
+.basis-info button{
     display: none;
 }
 
@@ -41,6 +41,7 @@ button{
     display: none;
 }
 .nav-menu {
+    display: block;
     position: sticky;
     top: 0;
     width: 100%;
@@ -652,9 +653,6 @@ button{
         display: flex;
         flex-direction: column;
     }
-    button{
-        display: block;
-    }
     .dropdown-icon {
         display: block;
         margin-left: auto;
@@ -663,6 +661,9 @@ button{
         color: white;
         font-size: 1.5rem;
         cursor: pointer;
+    }
+    .basis-info button{
+        display: block;
     }
     .basis-info img {
         width: 4rem;
