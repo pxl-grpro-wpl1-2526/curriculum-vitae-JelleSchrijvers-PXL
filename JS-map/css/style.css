@@ -353,6 +353,7 @@ button{
 }
 .card li{
     list-style-type: disc;
+    margin: 1rem;
 }
 .bedrijf {
     display: inline-block;
@@ -367,7 +368,6 @@ button{
     font-size: 0.9rem;
     margin: 0;
 }
-
 /* company links, periode rechts */
 .meta-row {
     display: flex;
@@ -771,15 +771,14 @@ button{
         transition: max-height 0.4s ease, opacity 0.4s ease;
     }
 
-    .card:hover .image-gallery {
-        max-height: 15vw;
+    .card .image-gallery {
+        max-height: 10rem;
         opacity: 1;
     }
 
     .image-gallery img {
         width: calc(33.333% - 0.4rem);
-        height: 15vw;
-        max-height: 10rem;
+        height: 10rem;
     }
 
     /* Language cards */
@@ -790,7 +789,7 @@ button{
 
     /* Footer */
     .footer {
-        position: static;
+        position: fixed;
         left: auto;
         right: auto;
         width: 100%;
