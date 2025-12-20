@@ -16,7 +16,7 @@ Deze repository bevat mijn **Online Curriculum Vitae (CV)** voor het opleidingso
 - [x] **WEB-10** – Consistent gebruik van lettertypes, kleuren en stijlen  
 - [x] **WEB-11** – Layout blijft netjes bij resize: leesbaar, klikbaar, automatischer herschikking  
 - [x] **WEB-12** – Mobiele weergave toont alternatief i.p.v. tabel; desktop toont weer tabel  
-- [ ] **WEB-13** – Correcte media-queries gebruikt:  
+- [x] **WEB-13** – Correcte media-queries gebruikt:  
   - Mobiel: < 576px  
   - Desktop: ≥ 992px  
   - (Optioneel) Tablet: 576px – 992px  
