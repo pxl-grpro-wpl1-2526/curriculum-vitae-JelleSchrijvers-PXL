@@ -405,6 +405,9 @@ button{
     background-color: #82b6e3;
     transition: 0.3s ease;
 }
+.mobile-tabel{
+    display: none;
+}
 
 /*basket-foto's*/
 .image-gallery {
@@ -610,6 +613,9 @@ button{
         height: 140px;
     }
 
+    .mobile-tabel{
+        display: none;
+    }
     /*FOOTER*/
     .footer {
         position: static;
@@ -675,6 +681,7 @@ button{
     /* Main content full width */
     .main-content {
         margin-left: 0;
+        padding-bottom: 5.5rem;
         width: 100%;
         height: auto;
         scroll-snap-type: none;
@@ -781,10 +788,33 @@ button{
         height: 10rem;
     }
 
-    /* Language cards */
-    .language-card {
-        min-height: 5rem;
-        font-size: 1rem;
+    /* Language Mobile*/
+    .talen-tabel{
+        display: none;
+    }
+
+    .mobile-tabel{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .taal-item {
+    margin-bottom: 1rem;
+    }
+    .taal-item span {
+        font-weight: 600;
+        color: #004aad;
+    }
+    .taal-bar {
+        width: 100%;
+        background: #dcefff;
+        height: 12px;
+        border-radius: 8px;
+        margin-top: 0.4rem;
+    }
+    .taal-bar div {
+        height: 100%;
+        background: linear-gradient(90deg, #5de0e6, #004aad);
+        border-radius: 8px;
     }
 
     /* Footer */
